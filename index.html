@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div  id="container">
+    <aside id="step-container">
+    <img src="./assets/images/bg-sidebar-mobile.svg" alt=""  id="mobile-image">
+    <div  id="step-number-container">
+
+      <div class="step-number-text">
+        <div id="step-number-1" class="step-number">1</div>
+  
+        <div class="step-one-text">
+          <p class="step-one-text-class">STEP 1</p>
+          <p>YOUR INFO</p>
+        </div>
+        </div>
+
+      <div class="step-number-text">
+        <div id="step-number-2" class="step-number">2</div>
+  
+        <div class="step-one-text">
+          <p class="step-one-text-class"> STEP 2</p>
+          <p>SELECT PLAN</p>
+        </div>
+        </div>
+        <div class="step-number-text">
+          <div id="step-number-3" class="step-number">3</div>
+    
+          <div class="step-one-text">
+            <p class="step-one-text-class">STEP 3</p>
+            <p>ADD-ONS</p>
+          </div>
+          </div>
+
+      <div class="step-number-text">
+      <div id="step-number-4" class="step-number">4</div>
+
+      <div class="step-one-text">
+        <p class="step-one-text-class">STEP 4</p>
+        <p>SUMMARY</p>
+      </div>
+      </div>    
+    </div>
+    </aside>
+
+    <main id="main-container">
+
+      <div  id="option-container">
+
+        <div id="option-one">
+          <h1 class="option-tittle">Personal info</h1>
+          <p class="option-description">Please provide your name, email address, and phone number.</p>
+          <form action="" class="option-form">
+            <div id="main-flex1"><p>Name</p><h5 id="main-flex1-h5" h5>This field is required</h5></div> 
+            <input  id="main-input-1" type="text" placeholder="   e.g. Stephen King">
+            <div id="main-flex2"><p>Email Address</p><h5 id="main-flex2-h5">This field is required</h5></div> 
+            <input id="main-input-2" type="text" placeholder="   e.g. stephenking@lorem.com">
+            <div id="main-flex3"><p>Phone Number</p><h5 id="main-flex3-h5" >This field is required</h5></div> 
+             <input id="main-input-3" type="text" placeholder="   e.g. +1 234 567 890">                        
+          </form>
+        </div>
+
+        <div id="option-two">
+          <h1 class="option-tittle">Select your plan</h1>
+          <p class="option-description">You have the option of monthly or yearly billing.</p>
+       
+          <div id="plan-desktop">
+          <div id="plan-1" class="option-two-sub">
+            <img src="./assets/images/icon-arcade.svg" alt="">
+            <div class="option-two-sub-text">
+              <h3>Arcade</h3>
+              <p id="priceyear1">$9/mo</p>
+              <p class="twomonth">2 months free</p>
+            </div>
+          </div>
+          <div id="plan-2" class="option-two-sub">
+            <img src="./assets/images/icon-advanced.svg" alt="">
+            <div class="option-two-sub-text">
+              <h3>Advanced</h3>
+              <p id="priceyear2">$12/mo</p>
+              <p class="twomonth">2 months free</p>
+            </div>
+          </div>
+          <div id="plan-3" class="option-two-sub">
+            <img src="./assets/images/icon-pro.svg" alt="">
+            <div class="option-two-sub-text">
+              <h3>Pro</h3>
+              <p id="priceyear3">$15/mo</p>
+              <p class="twomonth">2 months free</p>
+            </div>
+          </div>
+        </div>
+       
+          <div id="option-two-switch-button">
+            <p id="switch-text-month">Monthly</p>
+            <label for="checkbox" id="switch">
+            <input id="checkbox" type="checkbox" >
+            <span id="slider"></span>
+            </label>
+            <p id="switch-text-year">Yearly</p>
+          </div>
+       
+        </div>
+
+        <div id="option-three">
+          <h1 class="option-tittle">Pick add-ons</h1>
+          <p class="option-description">Add-ons help enhance your gaming experience.</p>
+
+          <div class="option-three-check" id="checktarget1">
+            <input id="checkinput1" type="checkbox">
+            <div class="option-three-check-text">
+              <h4>Online service</h4>
+              <p>Access to multiplayer games</p>
+            </div>         
+            <div id="three-year-1" class="check-text">
+              +$1/mo
+            </div> 
+          </div>
+
+          <div class="option-three-check" id="checktarget2">
+            <input id="checkinput2" type="checkbox">
+            <div class="option-three-check-text">
+              <h4>Larger storage</h4>
+              <p>Extra 1TB of cloud save</p>
+            </div>         
+            <div id="three-year-2" class="check-text">
+              +$2/mo
+            </div> 
+          </div>
+
+          <div class="option-three-check" id="checktarget3">
+            <input id="checkinput3" type="checkbox">
+            <div class="option-three-check-text">
+              <h4>Customizable Profile</h4>
+              <p>Custom theme on your profile</p>
+            </div>         
+            <div id="three-year-3" class="check-text">
+              +$2/mo
+            </div> 
+          </div>
+
+          </div>
+
+        <div id="option-four">
+          <h1 class="option-tittle">Finishing up</h1>
+          <p class="option-description">Double-check everything looks OK before confirming.</p>  
+          
+          <div id="option-four-calculation">
+            <h3 id="option-four-output-6">Arcade(Monthly)</h3>
+            <div class="option-four-flex">
+              <a id="option-four-change" >change</a>
+              <h4 id="option-four-output-1">$9/mo</h4>
+            </div>
+            <hr>
+            <div id="verylast1" class="option-four-flex">
+              <p>Online service</p>
+              <p id="option-four-output-2">+$1/mo</p>
+            </div>
+            <div id="verylast2" class="option-four-flex">
+              <p>Larger storage</p>
+              <p id="option-four-output-3">+$2/mo</p>
+            </div>
+            <div id="verylast3" class="option-four-flex">
+              <p>Customizable Profile</p>
+              <p id="option-four-output-5">+$2/mo</p>
+            </div>
+          </div>
+
+          <div id="option-four-total">
+            <div class="option-four-flex">
+              <p id="option-four-output-7">Total(per month)</p>
+              <p id="option-four-output-4">+$12/mo</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="option-five">
+          <img src="./assets/images/icon-thank-you.svg" alt="">
+          <h1 class="option-tittle">Thank you!</h1>
+          <p class="option-description">Thanks for confirming your subscription! We hope you have fun 
+            using our platform. If you ever need support, please feel free 
+            to email us at support@loremgaming.com.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div  id="button-container">
+        <button type="button" id="button-back">Go Back</button>
+        <button type="button" id="button-next">Next Step</button>
+        <button type="button" id="button-confirm">Confirm</button>
+      </div>
+
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
